@@ -1,35 +1,36 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Header from './components/Header'
+import ContentMenu from './components/ContentMenu'
+
+const content = [
+  {
+    tabName: "DRG",
+    content: "Danger, Darkness, Dwarves\nA horde shooter about blasting bugs and mining minerals\n4 player coop"
+  },
+  {
+    tabName: "Overwatch 2",
+    content: "An infuriating 5v5 multiplayer shooter where everyone is a dickhead"
+  },
+  {
+    tabName: "DSP",
+    content: "A relaxed multiplanetary factory builder"
+  },
+  {
+    tabName: "ONI",
+    content: "A colony builder where you manage resources to keep your dupes alive and well"
+  }
+];
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header></Header>
+      <ContentMenu content={content}></ContentMenu>
     </>
-  )
+  );
 }
 
 export default App
