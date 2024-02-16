@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import ContentMenuItem from './ContentMenuItem';
+
 export default function ContentMenu({ content }) {
     const [activeContentIndex, setActiveContentIndex] = useState(0);
     return (
-        <>
+        <div className="content-menu">
             <menu>
 
                 {content.map((item, index) =>
@@ -20,6 +21,6 @@ export default function ContentMenu({ content }) {
             <div>
                 <ContentMenuItem key={content[activeContentIndex]} content={content[activeContentIndex]}></ContentMenuItem>
             </div>
-        </>
+        </div>
     );
 }
