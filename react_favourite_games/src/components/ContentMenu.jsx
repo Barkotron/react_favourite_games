@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import ContentMenuItem from './ContentMenuItem';
 export default function ContentMenu({ content }) {
-
-    console.log({ content });
     const [activeContentIndex, setActiveContentIndex] = useState(0);
     return (
         <>
@@ -19,9 +17,9 @@ export default function ContentMenu({ content }) {
 
             </menu>
 
-            <ul>
-                <ContentMenuItem key={content[activeContentIndex]} content={content[activeContentIndex].content}></ContentMenuItem>
-            </ul>
+            <div>
+                <ContentMenuItem key={content[activeContentIndex]} content={content[activeContentIndex]}></ContentMenuItem>
+            </div>
         </>
     );
 }

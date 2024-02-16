@@ -1,8 +1,11 @@
 export default function ContentMenuItem({itemKey,content})
 {
     return (
-        <li key={itemKey}>
-            {content}
-        </li>
+        <>
+        <h3>{content.fullName}</h3>
+        <p key={itemKey}>
+            {content.content}
+        </p>
+        </>
     );
 }
