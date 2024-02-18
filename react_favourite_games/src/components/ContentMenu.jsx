@@ -6,16 +6,14 @@ export default function ContentMenu({ content }) {
     return (
         <div className="content-menu">
             <menu>
-
                 {content.map((item, index) =>
                     <button
-                        className={activeContentIndex === index ? "active" : ""}
+                        className={activeContentIndex === index ? "menu-button active" : "menu-button"}
                         onClick={() => setActiveContentIndex(index)}
                     >
                         {item.tabName}
                     </button>
                 )}
-
             </menu>
 
             <div>

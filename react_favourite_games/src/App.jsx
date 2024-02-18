@@ -1,10 +1,15 @@
-import { useState } from 'react'
 import './App.css'
 import Header from './components/Header'
 import ContentMenu from './components/ContentMenu'
-import reactLogo from './assets/react.svg'
 
 const content = [
+  {
+    tabName: "HD2",
+    fullName: "Helldivers 2",
+    tagLine: "For managed democracy!",
+    content: "A horde shooter about blasting bugs and bots in the name of managed democracy",
+    image: "hd2-wallpaper.jpg"
+  },
   {
     tabName: "DRG",
     fullName: "Deep Rock Galactic",
@@ -24,7 +29,7 @@ const content = [
     fullName: "Dyson Sphere Program",
     tagLine: "Damn, out of belts again!",
     content: "A relaxed multiplanetary factory builder",
-    image: "dsp-wallpaper.jpg"
+    image: "dsp-wallpaper2.jpg"
   },
   {
     tabName: "ONI",
