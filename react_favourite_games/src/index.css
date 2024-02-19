@@ -34,6 +34,11 @@ a:hover {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  
+  transition: font-size 0.25s;
+}
+h1:hover{
+  font-size: 3.5em;
 }
 
 header{
@@ -52,7 +57,7 @@ header{
   cursor: pointer;
   transition: border-color 0.25s;
   transition: color .25s;
-  margin: 4px;
+  margin: 0.25em;
 }
 
 .menu-button:hover {
